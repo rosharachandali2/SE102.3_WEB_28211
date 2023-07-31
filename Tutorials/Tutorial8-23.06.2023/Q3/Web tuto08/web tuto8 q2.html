@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Circle Area Calculator</title>
+</head>
+<body>
+    <script>
+        function calculateCircleArea() {
+            
+            let radius = parseFloat(prompt("Enter the radius of the circle:"));
+
+            
+            if (isNaN(radius)) {
+                alert("Invalid input! Please enter a valid number.");
+            } else {
+                
+                let area = (22 / 7) * Math.pow(radius, 2);
+
+                
+                alert("The area of the circle with radius " + radius + " is: " + area.toFixed(2));
+            }
+        }
+
+       
+        calculateCircleArea();
+    </script>
+</body>
+</html>
